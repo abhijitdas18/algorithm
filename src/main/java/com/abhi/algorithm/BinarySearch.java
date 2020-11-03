@@ -3,20 +3,23 @@ package com.abhi.algorithm;
 import java.util.Arrays;
 
 // Binary Search
-// 1. recursive 
+// 1. recursive approach
 // 2. 
 public class BinarySearch {
 
 	public static void main(String[] args) {
 
 		int[] num = { 23, 12, 8, 100, 34, 23 };
-		int searchNo = 23;
+		int searchNo = 100;
 		binarySearch(num, searchNo);
 
 	}
     // 1st sort the array
 	public static void binarySearch(int[] num, int no) {
-		sortArray(num);
+		System.out.println("Given array : ");
+		Arrays.stream(num).forEach(x-> System.out.print(x + ","));
+		sortArray(num); // Sort the given array
+		System.out.println("\nNo. to be searched :" + no );
 		int start = 0;
 		int end = num.length - 1;
 		int result = binarySearch(num, start, end, no);
@@ -30,10 +33,9 @@ public class BinarySearch {
 		// mid = start + (end -tart)/2
 		int mid = start + (end - start) / 2;
 		if (end >= 1 && mid <= end) {
-			
 
 			if (no == num[mid]) {
-				System.out.println("The no.  is found at " + mid);
+				//System.out.println("The no.  is found at " + (mid +1));
 				return mid;
 			}
 			if (num[mid]> no) {

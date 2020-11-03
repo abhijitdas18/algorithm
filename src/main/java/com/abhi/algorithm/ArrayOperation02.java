@@ -7,7 +7,7 @@ import java.util.List;
  * A array is given.
  * Find out array start with all even and followed by odd
  * e.g.
- * arr = {1,2,3,4,5,6,7,8,9};
+ * Given array = {1,2,3,4,5,6,7,8,9};
  * o/p = {2,4,6,8,1,3,5,7,9};
  * @author AbDas
  *
@@ -30,11 +30,11 @@ public class ArrayOperation02 {
 			else
 				odd.add(i);
 		}
-		System.out.println(even);
-		System.out.println(odd);
+		System.out.println("Even :" + even);
+		System.out.println("Odd:"+ odd);
 		
 		even.addAll(odd);
-		System.out.println("Merge : " + even);
+		System.out.println("Result :" + even);
 		
 	}
 

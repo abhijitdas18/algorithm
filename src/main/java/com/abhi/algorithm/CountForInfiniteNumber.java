@@ -14,13 +14,13 @@ public class CountForInfiniteNumber {
 	}
 
 	// public char[] toCharArray()
-	// the numeric value of the character, as a nonnegative int value; -2 if the character has a
-	// numeric value but the value can not be represented as a nonnegative int value;
+	// the numeric value of the character, as a non negative int value; -2 if the character has a
+	// numeric value but the value can not be represented as a non negative int value;
 	// -1 if the character has no numeric value.
 	static void findOccurenceOfDigit(String number)
 	{
 		char [] ch = number.toCharArray();
-		int [] n = new int[10];
+		int [] n = new int[10];   // To store 0 to 9 digits
 		for(char c : ch)
 		{
 			if(Character.getNumericValue(c) == 0)

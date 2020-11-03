@@ -4,8 +4,8 @@ public class BinarySearch01 {
 
 	public static void main(String[] args) {
 
-		int arr[] = {12,34,50, 79, 100, 166,876,5432};
-		int key = 79;
+		int arr[] = {12,34,50, 79, 100, 166,876,5432}; // sorted array
+		int key = 166;
 		
 		binarySearch(arr,  0, arr.length-1, key);
 	}
@@ -22,7 +22,7 @@ public class BinarySearch01 {
 				
 			}else if( arr[mid] == key )
 			{
-				System.out.println("Elment is found. Index is : "+ mid);
+				System.out.println("Element is found. Position is : "+ (mid + 1));
 				break;
 			}else
 			{

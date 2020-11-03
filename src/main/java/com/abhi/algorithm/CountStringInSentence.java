@@ -1,17 +1,13 @@
 package com.abhi.algorithm;
-//Count a string in a sentence. 
+// Count occurrence of a string say ("ab")  in a sentence "abc pwr abcabc lmn abcxyx".
 
-public class CountStringInStentence {
+public class CountStringInSentence {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
 		String str = "abc pwr abcabc lmn abcxyx";
 		findString(str, "ab");
 	}
-	
-	
-	
+
 	static void findString(String str , String s)
 	{
 		char[] chs = str.toCharArray();
