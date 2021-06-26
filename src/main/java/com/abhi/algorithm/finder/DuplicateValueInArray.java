@@ -19,7 +19,7 @@ public class DuplicateValueInArray {
         	for (int j = i+1 ; j<size; j++)
         	{
         		if(arr[i] == arr[j])
-        			System.out.println(arr[i]);
+        			System.out.println("Using array and Loop : " + arr[i]);
         	}
         }
     } 
@@ -32,7 +32,7 @@ public class DuplicateValueInArray {
 		{
 			if(no.add(i) == false)
 			{
-				System.out.println("Duplicate : " + i);
+				System.out.println("Using Set Duplicate : " + i);
 			}
 		}
 	}
